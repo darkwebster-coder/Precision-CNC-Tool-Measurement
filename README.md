@@ -1,33 +1,105 @@
-# Precision CNC Tool Measurement System
-![CNC Tools](https://img.shields.io/badge/Application-Manufacturing-blue)
-![Python](https://img.shields.io/badge/Python-3.8%2B-green)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-red)
+# CNC Tool Measurer Pro 🛠️📏
 
-Computer vision system for automated CNC tool measurement with µm-level accuracy using Jupyter Notebooks.
+**CNC Tool Measurer Pro** is a Python-based desktop application designed to accurately measure CNC tool components using image analysis. The system uses OpenCV for image processing and Tkinter for a user-friendly interface.
 
-## Features
-- ✔️ Automated edge detection for tool geometry
-- ✔️ Wear analysis with sub-micron precision
-- ✔️ Interactive measurement controls
-- ✔️ CSV/PDF report generation
+---
 
-## Quick Start
-```bash
-# Clone repository
-git clone https://github.com/YOUR-USERNAME/Precision-CNC-Tool-Measurement.git
-cd Precision-CNC-Tool-Measurement
+## 🔍 Features
 
-# Create and activate virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # Linux/MacOS
-.\venv\Scripts\activate   # Windows
+- 📸 **Camera & Upload Modes** – Capture or load top/side views of tools
+- 🔄 **Reference Scaling** – Uses ₹10 coin or other object for real-world scaling
+- 📏 **Measure Dimensions** – Inner diameter, outer diameter, height
+- 🧠 **Smart Detection** – Automatic contour and shape recognition
+- 🧪 **Sharpness Check** – Ensures input image is of usable quality
+- 💾 **Export Results** – Save measurements to Excel/CSV
+- 🧰 **Serial Port Ready** – Can be expanded to work with Arduino/CMMs
 
-# Install dependencies
-pip install -r requirements.txt
+---
 
-# Launch Jupyter
-jupyter lab
+## 🖥️ GUI Preview
 
-## 🛠️ Tech Stack
-```python
-Python | OpenCV | SciPy | Tkinter
+> The GUI features a multi-tab interface, with options for:
+- Image selection/capture
+- Manual & auto detection
+- Measurement display
+- Export & Reset
+
+---
+
+## 🧠 Technologies Used
+
+- **Python 3.x**
+- **OpenCV**
+- **Tkinter**
+- **PIL (Pillow)**
+- **NumPy**
+- **Serial (pyserial)**
+- **CSV & Excel Export**
+
+---
+
+## 🛠️ How to Run
+
+1. Clone this repository:
+   ```bash
+   git https://github.com/darkwebster-coder/Precision-CNC-Tool-Measurement
+   cd Precision-CNC-Tool-Measurement
+````
+
+2. Install dependencies:
+
+   ```bash
+   pip install opencv-python numpy pillow pyserial
+   ```
+
+3. Run the notebook:
+
+   ```bash
+   jupyter notebook toolFMM.ipynb
+   ```
+
+   Or convert the notebook to `.py` using:
+
+   ```bash
+   jupyter nbconvert --to script toolFMM.ipynb
+   python toolFMM.py
+   ```
+
+---
+
+## 📂 Folder Structure (recommended)
+
+```
+CNC-Tool-Measurer/
+│
+├── toolFMM.ipynb        # Main Jupyter notebook
+├── images/              # Captured/uploaded images
+├── exports/             # CSV/Excel measurement exports
+├── assets/              # Icons, reference objects
+├── README.md            # Project documentation
+```
+
+---
+
+## 📈 Future Improvements
+
+* Auto-calibration using multiple reference coins
+* Integration with CMM machines
+* AI-based shape classification
+* Multi-angle stitching
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## ✍️ Author
+
+**Rakshit Ojhaa**
+*Developer, Lifter, Builder*
+
+
+``
