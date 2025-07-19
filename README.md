@@ -4,6 +4,12 @@
 
 ---
 
+## 🎥 Demo
+
+Here’s a quick preview of how the CNC Tool Measurer works:
+
+![CNC Tool Measurer Demo](Demo.gif)
+
 ## 🔍 Features
 
 - 📸 **Camera & Upload Modes** – Capture or load top/side views of tools
@@ -42,8 +48,8 @@
 
 1. Clone this repository:
    ```bash
-   git https://github.com/darkwebster-coder/Precision-CNC-Tool-Measurement
-   cd Precision-CNC-Tool-Measurement
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   cd YOUR_REPO_NAME
 ````
 
 2. Install dependencies:
@@ -72,11 +78,12 @@
 ```
 CNC-Tool-Measurer/
 │
-├── toolFMM.ipynb        # Main Jupyter notebook
-├── images/              # Captured/uploaded images
-├── exports/             # CSV/Excel measurement exports
-├── assets/              # Icons, reference objects
-├── README.md            # Project documentation
+├── toolFMM.ipynb       # Notebook with visual explanation
+├── toolFMM.py          # Python script for direct execution
+├── demo.gif            # GIF demo of the tool in action
+├── README.md           # Project documentation
+├── requirements.txt    # (Optional) Dependencies list
+├── LICENSE             # (Optional) License file
 ```
 
 ---
@@ -100,6 +107,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Rakshit Ojhaa**
 *Developer, Lifter, Builder*
-
-
-``
